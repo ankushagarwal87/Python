@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Analytics On Transcripts Of Principal</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+</head>
+<style>
+html,body {
+  padding:0;
+  margin:0;
+  height:100%;
+  min-height:100%;
+ }
+
+.quarter{
+  width:47%;
+  height:100%;
+  float:left;
+  margin-left : 15px;
+  
+}
+.contents{
+  height:50%;
+  width:100%;
+}
+iframe {position:relative;top:0;left:0;width:100%;}
+
+
+
+#chart_wrap{
+
+margin-left : 17%;}
+
+#compound{
+position : absolute;
+margin-top : 5%;
+}
+.attendies{
+position : absolute;
+margin-top : 27%;
+margin-left : -80%;
+}
+</style>
+
+<body>
+	<div class="container">
+		<h2>Earning Impact Analyzer</h2>
+		<p>EI Report is your quickest insight into earnings calls as they happen during the earnings season.</p>
+
+		<ul class="nav nav-tabs">
+			<li class="active"><a data-toggle="tab" href="#home">Statistics</a></li>
+		
+		
+			<li><a data-toggle="tab" href="#Q1">Quarter 1</a></li>
+		
+		
+		
+			<li><a data-toggle="tab" href="#Q1">Quarter 1</a></li>
+		
+				
+		</ul>
+		
+		<div class="tab-content">
+			<div id="home" class="tab-pane fade in active">
+				<h3>Principal</h3>
+				<p></p>
+					<div class="contents">
+						
+						
+						<div class="col-md-6 quarter well">
+							<center class = "titleOfChart"><H3><B> Quarter 1 for  </B></H3></center>
+							<div class="container-fluid" id = "compound">
+								<div class="row">
+									<div class="col-md-12">The Overall Sentiment is 0.33 percent </div>
+									<a href="#" data-toggle="modal" data-target="#attendies1" class="btn btn-info " role="button" style="margin-left: 5%;margin-top:10%; z-index: 200;">Attendies</a>
+								</div>
+							</div>
+							
+							 
+							<center>
+								<div id="chart_wrap">
+									<div id="piechart1"></div>
+								</div>
+							</center>
+								<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+								<script type="text/javascript">
+								// Load google charts
+								
+								google.charts.load('current', {'packages':['corechart']});
+								google.charts.setOnLoadCallback(drawChart);
+
+								// Draw the chart and set the chart values
+								function drawChart() {
+								  var data = google.visualization.arrayToDataTable([
+								  ['Sentiiment', 'Probability'],
+								  ['Positive', 0.17411519607843132],
+								  ['Negative', 0.017745098039215687],
+								  ['Neutral', 0.8081421568627455]
+								]);
+
+								  // Optional; add a title and set the width and height of the chart
+								  var options = {  width: $(window).width()*0.42,height: $(window).height()*0.30,backgroundColor: 'transparent', legend: {position: 'none'}};
+
+								  // Display the chart inside the element with id="piechart"
+								  var chart = new google.visualization.PieChart(document.getElementById('piechart1'));
+								  chart.draw(data, options);
+								  google.visualization.events.addListener(chart, 'select', 
+								  
+								  function() {
+								  // grab a few details before redirecting
+								  var selection = chart.getSelection()[0];
+								  if (typeof selection != "undefined")
+								  {
+								  var topping = data.getValue(selection.row, 0);
+								  console.log(selection);
+								  console.log(topping);
+								  if(topping == 'Positive')
+										$('#positive1').modal('show');
+								  if(topping == 'Negative')
+										$('#negative1').modal('show');
+								  if(topping == 'Neutral')
+										$('#neutral1').modal('show');
+								  
+								  }
+								  });
+								}
+								</script>
+							</div>
+					
+					
+						
+						<div class="col-md-6 quarter well">
+							<center class = "titleOfChart"><H3><B> Quarter 1 for  </B></H3></center>
+							<div class="container-fluid" id = "compound">
+								<div class="row">
+									<div class="col-md-12">The Overall Sentiment is 0.33 percent </div>
+									<a href="#" data-toggle="modal" data-target="#attendies1" class="btn btn-info " role="button" style="margin-left: 5%;margin-top:10%; z-index: 200;">Attendies</a>
+								</div>
+							</div>
+							
+							 
+							<center>
+								<div id="chart_wrap">
+									<div id="piechart1"></div>
+								</div>
+							</center>
+								<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+								<script type="text/javascript">
+								// Load google charts
+								
+								google.charts.load('current', {'packages':['corechart']});
+								google.charts.setOnLoadCallback(drawChart);
+
+								// Draw the chart and set the chart values
+								function drawChart() {
+								  var data = google.visualization.arrayToDataTable([
+								  ['Sentiiment', 'Probability'],
+								  ['Positive', 0.17411519607843132],
+								  ['Negative', 0.017745098039215687],
+								  ['Neutral', 0.8081421568627455]
+								]);
+
+								  // Optional; add a title and set the width and height of the chart
+								  var options = {  width: $(window).width()*0.42,height: $(window).height()*0.30,backgroundColor: 'transparent', legend: {position: 'none'}};
+
+								  // Display the chart inside the element with id="piechart"
+								  var chart = new google.visualization.PieChart(document.getElementById('piechart1'));
+								  chart.draw(data, options);
+								  google.visualization.events.addListener(chart, 'select', 
+								  
+								  function() {
+								  // grab a few details before redirecting
+								  var selection = chart.getSelection()[0];
+								  if (typeof selection != "undefined")
+								  {
+								  var topping = data.getValue(selection.row, 0);
+								  console.log(selection);
+								  console.log(topping);
+								  if(topping == 'Positive')
+										$('#positive1').modal('show');
+								  if(topping == 'Negative')
+										$('#negative1').modal('show');
+								  if(topping == 'Neutral')
+										$('#neutral1').modal('show');
+								  
+								  }
+								  });
+								}
+								</script>
+							</div>
+					
+					
+					</div>
+				</div>
+			
+					
+								
+				<div id="Q1" class="tab-pane fade">
+					<div class="row" >
+						<div class="col-xs-12 col-sm-8 col-md-12">
+							<iframe class="frames" marginwidth="1" marginheight="1" hspace="0" vspace="0" src = "file:////home/ankush/Github/Code Jam Python/datavaders/data/Principal/Q1PrincipalQ1.html" frameBorder = "0"></iframe>
+						</div>
+					</div>
+				</div>
+				
+				
+								
+				<div id="Q1" class="tab-pane fade">
+					<div class="row" >
+						<div class="col-xs-12 col-sm-8 col-md-12">
+							<iframe class="frames" marginwidth="1" marginheight="1" hspace="0" vspace="0" src = "file:////home/ankush/Github/Code Jam Python/datavaders/data/Principal/Q1PrincipalQ1.html" frameBorder = "0"></iframe>
+						</div>
+					</div>
+				</div>
+				
+				
+		</div>
+	</div>	
+
+
+
+<!-- Modal -->
+<div id="positive1" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Positive Sentences Of Quarter 1</h4>
+      </div>
+      <div class="modal-body">
+		 
+        <p>This morning I'll share some performance highlights and accomplishments that positions for continued growth.</p>
+		
+        <p>At $371 million of after tax operating earnings we delivered 29% growth compared to first quarter 2016, this reflects good underlying growth across our fee, spread and risk businesses.</p>
+		
+        <p>This reflects strong asset appreciation and nearly $20 billion of positive net cash flow and it provides a solid foundation for revenue and earnings growth for the year.</p>
+		
+        <p>Recent pension reform proposals have identified the real issue the need for a higher savings rate will continue to be actively involved in the dialogue on creating a sustainable retirement system in Chile, one that creates adequate income in retirement for its citizens through both mandatory and voluntary solutions.</p>
+		
+        <p>We expand our partnership with Zenefits beyond specialty benefits adding our new digital 401(k) solution to their benefits exchange platform.</p>
+		
+        <p>We remain confident in our ability to comply and remain focused on helping advisors deliver retirement, protection and income solutions to their customers.</p>
+		
+        <p>We go forward from a position of strength with excellent fundamentals and the benefit of broad diversification.</p>
+		
+        <p>Credit losses continue to be below our pricing assumptions.</p>
+		
+        <p>This strong growth in AUM was driven by positive investment performance, favorable foreign currency translation, and importantly positive total company net cash flows nearly $20 billion over the trailing 12 months including $3.7 billion during the first quarter.</p>
+		
+        <p>Once strategy that has proven successful for our U.S. retirement business has been our multi-manager investment platform that offers our customers best-in-class solutions, including affiliated and non-affiliated managers, as well as a suite of target date investments with both active and hybrid solutions.</p>
+		
+        <p>Our target date suite flows in the first quarter remain positive with strong sales and contribution from our retirement plan participants.</p>
+		
+        <p>Digging deeper into the business unit results, it's important to reiterate our focus on balancing growth and profitability.</p>
+		
+        <p>Each continues to produce growth and margins that look very attractive relative to industry results.</p>
+		
+        <p>Our real estate portfolio is well positioned for the risk and opportunities of this evolving economy.</p>
+		
+        <p>In closing I see great opportunity in our future, and I'm excited to grow in my new role as CFO.</p>
+		
+        <p>We would be curious of course, if there is a good match out there that overlays our existing commitment to small to medium size employers, where we think additional scale could be helpful to our long term shareholders.</p>
+		
+        <p>I think the growth story is more around our ability to continue growing revenues and earnings, as we did in the first quarter.</p>
+		
+        <p>We would expect to be at the high end of that net revenue growth as well.</p>
+		
+        <p>So it’s a 7% increase over same periods in 2016, same thing for our revenues also growing at 7%.</p>
+		
+        <p>The expectation that this outstanding retention will continue to see that we’re comfortable in that 1% to 3% range with that caveat around these raising equity markets.</p>
+		
+        <p>We believe the combination of the revise performance and the management clear signs of succession planning.</p>
+		
+        <p>I think that’s going to help us get back clients confidence.</p>
+		
+        <p>So I’m not pessimistic about the flow outlook.</p>
+		
+        <p>Recurring deposits that in plan cash flow you talk about those being strong they absolutely a strong that 8% quarter-over-quarter is a very significant growth driver for us.</p>
+		
+        <p>But we’ve looked forward and revisited that outlook call and really are confident that yes, we’re in the ballpark we’re going to be at the high end of the range with regard to net revenue growth.</p>
+		
+        <p>Now, will we exceed on margins, will we exceed on that revenue growth certainly possibly that can happen.</p>
+		
+        <p>And right now, the best way to deploy our capital seemingly is around more organic growth.</p>
+		
+        <p>But they make the point that they really are about financial planning, helping with life and disability protection, wealth distribution strategies, asset management strategies, education funding and securing the customers, financial future.</p>
+		
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal Closing-->	
+<!-- Modal -->
+<div id="negative1" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Negative Sentences Of Quarter 1</h4>
+      </div>
+      <div class="modal-body">
+		 
+        <p>While Columbus Circle experienced negative net cash flows of $1.3 billion in the first quarter.</p>
+		
+        <p>Credit losses continue to be below our pricing assumptions.</p>
+		
+        <p>Further our exposure to risk of loss in the CMBS portfolio is modest.</p>
+		
+        <p>On Principal International flows were much improved from the year ago, but down from 4Q 2016.</p>
+		
+        <p>So I may be missing your question.</p>
+		
+        <p>John Nadel
+No.</p>
+		      
+	  </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal Closing-->
+<!-- Modal -->
+<div id="attendies1" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Attendies of Quarter 1</h4>
+      </div>
+      <div class="modal-body">
+	    <h4>Executives :</h4>
+		<ol>
+		 
+        <li>John Egan - Vice President of Investor Relations</li>
+		
+        <li>Daniel Houston - Chairman, President and Chief Executive Officer</li>
+		
+        <li>Deanna Strable - Executive Vice President and Chief Financial Officer</li>
+		
+        <li>Nora Everett - President of Retirement and Income Solutions and Chairman of Principal Funds</li>
+		
+        <li>Luis Valdés - President, Principal International</li>
+		
+        <li>James McCaughan - President, Global Asset Management and Chief Executive Officer</li>
+		     
+		</ol>
+		<h4>Analysts :</h4>
+		<ol>
+		 
+        <li>Tom Gallagher - Evercore ISI</li>
+		
+        <li>John Barnidge - Sandler O'Neill</li>
+		
+        <li>Seth Weiss - Bank of America</li>
+		
+        <li>Humphrey Lee - Dowling & Partners</li>
+		
+        <li>Jimmy Bhullar - J.P. Morgan</li>
+		
+        <li>John Nadel - Credit Suisse</li>
+		
+        <li>Ryan Krueger - KBW</li>
+		     
+		</ol>
+	  </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal Closing-->		
+
+
+
+<!-- Modal -->
+<div id="positive1" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Positive Sentences Of Quarter 1</h4>
+      </div>
+      <div class="modal-body">
+		 
+        <p>This morning I'll share some performance highlights and accomplishments that positions for continued growth.</p>
+		
+        <p>At $371 million of after tax operating earnings we delivered 29% growth compared to first quarter 2016, this reflects good underlying growth across our fee, spread and risk businesses.</p>
+		
+        <p>This reflects strong asset appreciation and nearly $20 billion of positive net cash flow and it provides a solid foundation for revenue and earnings growth for the year.</p>
+		
+        <p>Recent pension reform proposals have identified the real issue the need for a higher savings rate will continue to be actively involved in the dialogue on creating a sustainable retirement system in Chile, one that creates adequate income in retirement for its citizens through both mandatory and voluntary solutions.</p>
+		
+        <p>We expand our partnership with Zenefits beyond specialty benefits adding our new digital 401(k) solution to their benefits exchange platform.</p>
+		
+        <p>We remain confident in our ability to comply and remain focused on helping advisors deliver retirement, protection and income solutions to their customers.</p>
+		
+        <p>We go forward from a position of strength with excellent fundamentals and the benefit of broad diversification.</p>
+		
+        <p>Credit losses continue to be below our pricing assumptions.</p>
+		
+        <p>This strong growth in AUM was driven by positive investment performance, favorable foreign currency translation, and importantly positive total company net cash flows nearly $20 billion over the trailing 12 months including $3.7 billion during the first quarter.</p>
+		
+        <p>Once strategy that has proven successful for our U.S. retirement business has been our multi-manager investment platform that offers our customers best-in-class solutions, including affiliated and non-affiliated managers, as well as a suite of target date investments with both active and hybrid solutions.</p>
+		
+        <p>Our target date suite flows in the first quarter remain positive with strong sales and contribution from our retirement plan participants.</p>
+		
+        <p>Digging deeper into the business unit results, it's important to reiterate our focus on balancing growth and profitability.</p>
+		
+        <p>Each continues to produce growth and margins that look very attractive relative to industry results.</p>
+		
+        <p>Our real estate portfolio is well positioned for the risk and opportunities of this evolving economy.</p>
+		
+        <p>In closing I see great opportunity in our future, and I'm excited to grow in my new role as CFO.</p>
+		
+        <p>We would be curious of course, if there is a good match out there that overlays our existing commitment to small to medium size employers, where we think additional scale could be helpful to our long term shareholders.</p>
+		
+        <p>I think the growth story is more around our ability to continue growing revenues and earnings, as we did in the first quarter.</p>
+		
+        <p>We would expect to be at the high end of that net revenue growth as well.</p>
+		
+        <p>So it’s a 7% increase over same periods in 2016, same thing for our revenues also growing at 7%.</p>
+		
+        <p>The expectation that this outstanding retention will continue to see that we’re comfortable in that 1% to 3% range with that caveat around these raising equity markets.</p>
+		
+        <p>We believe the combination of the revise performance and the management clear signs of succession planning.</p>
+		
+        <p>I think that’s going to help us get back clients confidence.</p>
+		
+        <p>So I’m not pessimistic about the flow outlook.</p>
+		
+        <p>Recurring deposits that in plan cash flow you talk about those being strong they absolutely a strong that 8% quarter-over-quarter is a very significant growth driver for us.</p>
+		
+        <p>But we’ve looked forward and revisited that outlook call and really are confident that yes, we’re in the ballpark we’re going to be at the high end of the range with regard to net revenue growth.</p>
+		
+        <p>Now, will we exceed on margins, will we exceed on that revenue growth certainly possibly that can happen.</p>
+		
+        <p>And right now, the best way to deploy our capital seemingly is around more organic growth.</p>
+		
+        <p>But they make the point that they really are about financial planning, helping with life and disability protection, wealth distribution strategies, asset management strategies, education funding and securing the customers, financial future.</p>
+		
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal Closing-->	
+<!-- Modal -->
+<div id="negative1" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Negative Sentences Of Quarter 1</h4>
+      </div>
+      <div class="modal-body">
+		 
+        <p>While Columbus Circle experienced negative net cash flows of $1.3 billion in the first quarter.</p>
+		
+        <p>Credit losses continue to be below our pricing assumptions.</p>
+		
+        <p>Further our exposure to risk of loss in the CMBS portfolio is modest.</p>
+		
+        <p>On Principal International flows were much improved from the year ago, but down from 4Q 2016.</p>
+		
+        <p>So I may be missing your question.</p>
+		
+        <p>John Nadel
+No.</p>
+		      
+	  </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal Closing-->
+<!-- Modal -->
+<div id="attendies1" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Attendies of Quarter 1</h4>
+      </div>
+      <div class="modal-body">
+	    <h4>Executives :</h4>
+		<ol>
+		 
+        <li>John Egan - Vice President of Investor Relations</li>
+		
+        <li>Daniel Houston - Chairman, President and Chief Executive Officer</li>
+		
+        <li>Deanna Strable - Executive Vice President and Chief Financial Officer</li>
+		
+        <li>Nora Everett - President of Retirement and Income Solutions and Chairman of Principal Funds</li>
+		
+        <li>Luis Valdés - President, Principal International</li>
+		
+        <li>James McCaughan - President, Global Asset Management and Chief Executive Officer</li>
+		     
+		</ol>
+		<h4>Analysts :</h4>
+		<ol>
+		 
+        <li>Tom Gallagher - Evercore ISI</li>
+		
+        <li>John Barnidge - Sandler O'Neill</li>
+		
+        <li>Seth Weiss - Bank of America</li>
+		
+        <li>Humphrey Lee - Dowling & Partners</li>
+		
+        <li>Jimmy Bhullar - J.P. Morgan</li>
+		
+        <li>John Nadel - Credit Suisse</li>
+		
+        <li>Ryan Krueger - KBW</li>
+		     
+		</ol>
+	  </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal Closing-->		
+
+
+
+	
+</body>
+<script>
+var _docHeight = (document.height !== undefined) ? document.height : document.body.offsetHeight;
+frameHeight = _docHeight - (_docHeight*25)/100
+
+var elements = document.getElementsByClassName("frames");
+for (var i=0;i<elements.length ; i++){
+	$(elements[i]).attr( 'height', frameHeight);
+	}
+</script>
+
+</html>

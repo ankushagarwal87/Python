@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+    <person>
+        <name>John</name>
+        <surname>Doe</surname>
+        <age>25</age>
+    </person>
+    
+    <person>
+        <name>Jane</name>
+        <surname>Doe</surname>
+        <age>19</age>
+    </person>
+    
+</urlset>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Analytics On Transcripts Of {{company}}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+</head>
+<style>
+html,body {
+  padding:0;
+  margin:0;
+  height:100%;
+  min-height:100%;
+ }
+
+.quarter{
+  width:47%;
+  height:100%;
+  float:left;
+  margin-left : 15px;
+  
+}
+.contents{
+  height:50%;
+  width:100%;
+}
+iframe {position:relative;top:0;left:0;width:100%;}
+
+
+
+#chart_wrap{
+
+margin-left : 17%;}
+
+#compound{
+position : absolute;
+margin-top : 5%;
+}
+.attendies{
+position : absolute;
+margin-top : 27%;
+margin-left : -80%;
+}
+</style>
+
+<body>
+	<div class="container">
+		<h2>Earning Impact Analyzer</h2>
+		<p>EI Report is your quickest insight into earnings calls as they happen during the earnings season.</p>
+
+		<ul class="nav nav-tabs">
+			<li class="active"><a data-toggle="tab" href="#home">Statistics</a></li>
+		{% for data_packet in info %}
+		{% for datacontent in data_packet %}
+			<li><a data-toggle="tab" href="#{{datacontent["quarterNum"]}}">{{datacontent["quarter"]}}</a></li>
+		{% endfor %}
+		{% endfor %}		
+		</ul>
+		
+		<div class="tab-content">
+			<div id="home" class="tab-pane fade in active">
+				<h3>{{company}}</h3>
+				<p></p>
+					<div class="contents">
+						{% for data_packet in info %}
+						{% for datacontent in data_packet %}
+						<div class="col-md-6 quarter well">
+							<center class = "titleOfChart"><H3><B> {{datacontent["quarter"]}} for {{datacontent["year"]}}</B></H3></center>
+							<div class="container-fluid" id = "compound">
+								<div class="row">
+									<div class="col-md-12">The Overall Sentiment is {{datacontent["compoundSentiment"]}} percent {{datacontent["compoundSentimentType"]}}</div>
+									<a href="#" data-toggle="modal" data-target="#attendies{{datacontent["quarterIndex"]}}" class="btn btn-info " role="button" style="margin-left: 5%;margin-top:10%; z-index: 200;">Attendies</a>
+								</div>
+							</div>
+							
+							 
+							<center>
+								<div id="chart_wrap">
+									<div id="piechart{{datacontent["quarterIndex"]}}"></div>
+								</div>
+							</center>
+								<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+								<script type="text/javascript">
+								// Load google charts
+								
+								google.charts.load('current', {'packages':['corechart']});
+								google.charts.setOnLoadCallback(drawChart);
+
+								// Draw the chart and set the chart values
+								function drawChart() {
+								  var data = google.visualization.arrayToDataTable([
+								  ['Sentiiment', 'Probability'],
+								  ['Positive', {{datacontent["positiveValueForGraph"]}}],
+								  ['Negative', {{datacontent["negativeValueForGraph"]}}],
+								  ['Neutral', {{datacontent["neutralValueForGraph"]}}]
+								]);
+
+								  // Optional; add a title and set the width and height of the chart
+								  var options = {  width: $(window).width()*0.42,height: $(window).height()*0.30,backgroundColor: 'transparent', legend: {position: 'none'}};
+
+								  // Display the chart inside the element with id="piechart"
+								  var chart = new google.visualization.PieChart(document.getElementById('piechart{{datacontent["quarterIndex"]}}'));
+								  chart.draw(data, options);
+								  google.visualization.events.addListener(chart, 'select', 
+								  
+								  function() {
+								  // grab a few details before redirecting
+								  var selection = chart.getSelection()[0];
+								  if (typeof selection != "undefined")
+								  {
+								  var topping = data.getValue(selection.row, 0);
+								  console.log(selection);
+								  console.log(topping);
+								  if(topping == 'Positive')
+										$('#positive{{datacontent["quarterIndex"]}}').modal('show');
+								  if(topping == 'Negative')
+										$('#negative{{datacontent["quarterIndex"]}}').modal('show');
+								  if(topping == 'Neutral')
+										$('#neutral{{datacontent["quarterIndex"]}}').modal('show');
+								  
+								  }
+								  });
+								}
+								</script>
+							</div>
+					{% endfor %}
+					{% endfor %}
+					</div>
+				</div>
+			
+					{% for data_packet in info %}
+					{% for datacontent in data_packet %}			
+				<div id="{{datacontent["quarterNum"]}}" class="tab-pane fade">
+					<div class="row" >
+						<div class="col-xs-12 col-sm-8 col-md-12">
+							<iframe class="frames" marginwidth="1" marginheight="1" hspace="0" vspace="0" src = "{{datacontent["quarterFile"]}}" frameBorder = "0"></iframe>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+				{% endfor %}
+		</div>
+	</div>	
+
+{% for data_packet in info %}
+{% for datacontent in data_packet %}
+<!-- Modal -->
+<div id="positive{{datacontent["quarterIndex"]}}" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Positive Sentences Of {{datacontent["quarter"]}}</h4>
+      </div>
+      <div class="modal-body">
+		 {% for item in datacontent['positiveSentences'] %}
+        <p>{{item}}</p>
+		{% endfor %}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal Closing-->	
+<!-- Modal -->
+<div id="negative{{datacontent["quarterIndex"]}}" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Negative Sentences Of {{datacontent["quarter"]}}</h4>
+      </div>
+      <div class="modal-body">
+		 {% for item in datacontent['negativeSentences'] %}
+        <p>{{item}}</p>
+		{% endfor %}      
+	  </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal Closing-->
+<!-- Modal -->
+<div id="attendies{{datacontent["quarterIndex"]}}" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Attendies of {{datacontent["quarter"]}}</h4>
+      </div>
+      <div class="modal-body">
+	    <h4>Executives :</h4>
+		<ol>
+		 {% for item in datacontent['executive'] %}
+        <li>{{item}}</li>
+		{% endfor %}     
+		</ol>
+		<h4>Analysts :</h4>
+		<ol>
+		 {% for item in datacontent['analyst'] %}
+        <li>{{item}}</li>
+		{% endfor %}     
+		</ol>
+	  </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal Closing-->		
+{% endfor %}
+{% endfor %}
+
+	
+</body>
+<script>
+var _docHeight = (document.height !== undefined) ? document.height : document.body.offsetHeight;
+frameHeight = _docHeight - (_docHeight*25)/100
+
+var elements = document.getElementsByClassName("frames");
+for (var i=0;i<elements.length ; i++){
+	$(elements[i]).attr( 'height', frameHeight);
+	}
+</script>
+
+</html>

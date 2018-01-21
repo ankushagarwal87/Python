@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<!--    <meta charset="utf-8">-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script>
+function changeColor(id)
+{ 
+  document.getElementById(id).style.color = "#0000FF"; // forecolor
+  document.getElementById(id).style.backgroundColor = "#FFFF00"; // backcolor
+
+  $("#myModal").on('shown.bs.modal', function(event) {
+        console.log("not setting focus to submit button");
+        window.location.hash = id;
+    });
+}
+
+function reset(id)
+{
+  document.getElementById(id).style.color = "#000000"; // forecolor
+  //document.getElementById(id).style.backgroundColor = "#FFFFFF"; // backcolor
+}
+
+</script>
+
+</head>
+<body>
+<div>
+<H1>Earning Impact</H1>
+{% for result in earningStatements %}<a data-toggle="modal" data-target=".bd-example-modal-lg" href="#" onclick="changeColor('{{result[0]}}');return false;" id="{{result[1]}}" >{{result[2]}}</a><br>{% endfor %}
+<br>
+<H1>Forward Looking Sentences</H1>
+{% for result in forwardLookingSentenceData %}<a data-toggle="modal" data-target=".bd-example-modal-lg" href="#" onClick="changeColor('{{result[0]}}');return false;" id="{{result[1]}}" >{{result[2]}}</a><br>{% endfor %}
+<br>
+
+<div class="modal fade bd-example-modal-lg"  id ="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+<H1>Earning Call Transcripts From Seeking Alpha</H1>
+{% for result in transcriptData %}<div id="{{result[1]}}" class = "transcript">{{result[2]}}</div>{% endfor %}
+</div>
+	</div>
+  </div>
+</div>
+
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script type="text/javascript">  
+                $(function(){  
+                      $('#myModal').on('hidden.bs.modal', function (e) {
+                      console.log("Modal hidden");
+					  var elements = document.getElementsByClassName("transcript");
+						for (var i=0;i<elements.length ; i++){
+							elements.item(i).style.color = 'black';
+							elements.item(i).style.backgroundColor = "#FFFFFF";
+							}
+                    });
+                });
+				
+				
+				
+				
+				
+              </script>
+</body>
+</html>

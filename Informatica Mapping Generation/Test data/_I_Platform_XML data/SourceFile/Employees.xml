@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding='utf-8'?>
+<EMPLOYEES>
+   <EMPLOYEE EMPID="105" DEPTID="FIN" >
+      <LASTNAME>Smith</LASTNAME>
+      <FIRSTNAME>Martha</FIRSTNAME>
+      <ADDRESS>
+         <STREETADDRESS>335 Westshore Road</STREETADDRESS>
+         <CITY>Fausta City</CITY>
+         <STATE>CA</STATE>
+         <ZIP>97584</ZIP>
+      </ADDRESS>
+      <PHONE>(415)552-1623</PHONE>
+      <EMAIL>msmith@acme.com</EMAIL>
+      <EMAIL>martha@smith.com</EMAIL>
+      <EMPLOYMENT EMPLSTAT="PF">
+         <DATEOFHIRE>12-02-1997</DATEOFHIRE>
+         <SALARY>65350</SALARY>
+         <SALARY>5000</SALARY>
+		  <SALARY>0</SALARY>
+      </EMPLOYMENT>
+   </EMPLOYEE>
+
+   <EMPLOYEE EMPID="53" DEPTID="ENG" >
+      <LASTNAME>Loren</LASTNAME>
+      <FIRSTNAME>Pamela</FIRSTNAME>
+      <ADDRESS>
+         <STREETADDRESS>19 B. Candido Street</STREETADDRESS>
+         <CITY>Zamboanga City</CITY>
+         <STATE>CA</STATE>
+         <ZIP>94404</ZIP>
+      </ADDRESS>
+      <PHONE>(415)560-1023</PHONE>
+      <PHONE>(650)584-7970</PHONE>
+      <EMAIL>ploren@acme.com</EMAIL>
+      <EMAIL>paml@myyahoo.com</EMAIL>
+      <EMAIL>paml@mydomain.com</EMAIL>
+      <EMPLOYMENT EMPLSTAT="TF">
+         <DATEOFHIRE>07-05-1998</DATEOFHIRE>
+         <SALARY>72450</SALARY>
+         <SALARY>0</SALARY>
+         <SALARY>2500</SALARY>
+      </EMPLOYMENT>
+   </EMPLOYEE>
+
+   <EMPLOYEE EMPID="74" DEPTID="SLS" >
+      <LASTNAME>Arquiza</LASTNAME>
+      <FIRSTNAME>Noriel</FIRSTNAME>
+      <ADDRESS>
+         <STREETADDRESS>89 Catamaran Drive</STREETADDRESS>
+         <CITY>Alonzo</CITY>
+         <STATE>CA</STATE>
+         <ZIP>94229</ZIP>
+      </ADDRESS>
+      <PHONE>(510)222-4970</PHONE>
+      <PHONE>(510)734-1020</PHONE>
+      <EMAIL>narquiza@acme.com</EMAIL>
+      <EMAIL>arquiz@mainmail.com</EMAIL>
+      <EMPLOYMENT EMPLSTAT="PF">
+         <DATEOFHIRE>03-30-2000</DATEOFHIRE>
+         <SALARY>75000</SALARY>
+         <SALARY>30934</SALARY>
+         <SALARY>1000</SALARY>
+      </EMPLOYMENT>
+   </EMPLOYEE>
+
+   <EMPLOYEE EMPID="256" DEPTID="FIN" >
+      <LASTNAME>Wigglesworth</LASTNAME>
+      <FIRSTNAME>Wesley</FIRSTNAME>
+      <ADDRESS>
+         <STREETADDRESS>756 N. First Drive</STREETADDRESS>
+         <CITY>Jamison</CITY>
+         <STATE>CA</STATE>
+         <ZIP>97754</ZIP>
+      </ADDRESS>
+      <PHONE>(402)372-5470</PHONE>
+      <PHONE>(402)761-1760</PHONE>
+      <EMAIL>wwiggles@acme.com</EMAIL>
+      <EMAIL>wwiggles@mainmail.com</EMAIL>
+      <EMPLOYMENT EMPLSTAT="PF">
+         <DATEOFHIRE>11-19-1996</DATEOFHIRE>
+         <SALARY>62570</SALARY>
+         <SALARY>0</SALARY>
+         <SALARY>2000</SALARY>
+      </EMPLOYMENT>
+   </EMPLOYEE>
+
+   <EMPLOYEE EMPID="108" DEPTID="SLS" >
+      <LASTNAME>Mochizuki</LASTNAME>
+      <FIRSTNAME>Cecilia</FIRSTNAME>
+      <ADDRESS>
+         <STREETADDRESS>45 Edgewater Drive</STREETADDRESS>
+         <CITY>Palo Colorado</CITY>
+         <STATE>CA</STATE>
+         <ZIP>94039</ZIP>
+      </ADDRESS>
+      <PHONE>(204)335-4403</PHONE>
+      <PHONE>(204)334-1654</PHONE>
+      <EMAIL>cmochizuki@acme.com</EMAIL>
+      <EMPLOYMENT EMPLSTAT="PF">
+         <DATEOFHIRE>02-16-2000</DATEOFHIRE>
+         <SALARY>62450</SALARY>
+         <SALARY>12725</SALARY>
+         <SALARY>0</SALARY>
+      </EMPLOYMENT>
+   </EMPLOYEE>
+
+   <EMPLOYEE EMPID="45" DEPTID="ENG" >
+      <LASTNAME>Lucas</LASTNAME>
+      <FIRSTNAME>Rommel</FIRSTNAME>
+      <ADDRESS>
+         <STREETADDRESS>22 North Cajon Drive</STREETADDRESS>
+         <CITY>Logreene</CITY>
+         <STATE>CA</STATE>
+         <ZIP>92340</ZIP>
+      </ADDRESS>
+      <PHONE>(510)752-3573</PHONE>
+      <PHONE>(510)772-3029</PHONE>
+      <EMAIL>rlucas@acme.com</EMAIL>
+      <EMPLOYMENT EMPLSTAT="PF">
+         <DATEOFHIRE>03-30-1997</DATEOFHIRE>
+         <SALARY>62500</SALARY>
+         <SALARY>0</SALARY>
+         <SALARY>4500</SALARY>
+      </EMPLOYMENT>
+   </EMPLOYEE>
+
+   <EMPLOYEE EMPID="99" DEPTID="SLS" >
+      <LASTNAME>Chandran</LASTNAME>
+      <FIRSTNAME>Savitha</FIRSTNAME>
+      <ADDRESS>
+         <STREETADDRESS>2349 English Oak Drive</STREETADDRESS>
+         <CITY>Ayala</CITY>
+         <STATE>CA</STATE>
+         <ZIP>93255</ZIP>
+      </ADDRESS>
+      <PHONE>(408)495-2155</PHONE>
+      <EMAIL>schandran@acme.com</EMAIL>
+      <EMAIL>savchan@mainmail.com</EMAIL>
+      <EMAIL>savic@mymail.com</EMAIL>
+      <EMPLOYMENT EMPLSTAT="PF">
+         <DATEOFHIRE>01-21-1999</DATEOFHIRE>
+         <SALARY>74975</SALARY>
+         <SALARY>23200</SALARY>
+         <SALARY>0</SALARY>
+      </EMPLOYMENT>
+   </EMPLOYEE>
+
+   <EMPLOYEE EMPID="72" DEPTID="ENG" >
+      <LASTNAME>Jones</LASTNAME>
+      <FIRSTNAME>Kathleen</FIRSTNAME>
+      <ADDRESS>
+         <STREETADDRESS>42 Tetuan Court</STREETADDRESS>
+         <CITY>Fausta City</CITY>
+         <STATE>CA</STATE>
+         <ZIP>97584</ZIP>
+      </ADDRESS>
+      <PHONE>(415)552-0303</PHONE>
+      <EMAIL>kjones@acme.com</EMAIL>
+      <EMPLOYMENT EMPLSTAT="PF">
+         <DATEOFHIRE>03-30-2000</DATEOFHIRE>
+         <SALARY>132000</SALARY>
+         <SALARY>0</SALARY>
+         <SALARY>4000</SALARY>
+      </EMPLOYMENT>
+   </EMPLOYEE>
+
+   <EMPLOYEE EMPID="138" DEPTID="ENG" >
+      <LASTNAME>Sapp</LASTNAME>
+      <FIRSTNAME>Carmina</FIRSTNAME>
+      <ADDRESS>
+         <STREETADDRESS>251 Topsail Court</STREETADDRESS>
+         <CITY>Alonzo</CITY>
+         <STATE>CA</STATE>
+         <ZIP>94229</ZIP>
+      </ADDRESS>
+      <PHONE>(650)277-5407</PHONE>
+      <EMAIL>csapp@acme.com</EMAIL>
+      <EMAIL>carmina@sapp.com</EMAIL>
+      <EMPLOYMENT EMPLSTAT="PF">
+         <DATEOFHIRE>11-20-1998</DATEOFHIRE>
+         <SALARY>95675</SALARY>
+         <SALARY>0</SALARY>
+         <SALARY>7500</SALARY>
+      </EMPLOYMENT>
+   </EMPLOYEE>
+
+   <EMPLOYEE EMPID="102" DEPTID="HR" >
+      <LASTNAME>de los Reyes</LASTNAME>
+      <FIRSTNAME>Luis</FIRSTNAME>
+      <ADDRESS>
+         <STREETADDRESS>112 Socorro Drive</STREETADDRESS>
+         <CITY>Loyola Heights</CITY>
+         <STATE>CA</STATE>
+         <ZIP>95333</ZIP>
+      </ADDRESS>
+      <PHONE>(408)971-8152</PHONE>
+      <PHONE>(408)971-4496</PHONE>
+      <EMAIL>ldlreyes@acme.com</EMAIL>
+      <EMAIL>luisdlr@firstmail.com</EMAIL>
+      <EMPLOYMENT EMPLSTAT="PF">
+         <DATEOFHIRE>04-05-1998</DATEOFHIRE>
+         <SALARY>39450</SALARY>
+         <SALARY>0</SALARY>
+         <SALARY>2000</SALARY>
+      </EMPLOYMENT>
+   </EMPLOYEE>
+
+
+</EMPLOYEES>

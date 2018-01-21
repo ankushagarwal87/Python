@@ -1,0 +1,1 @@
+Income,Revenue,Revenues,Expense,Expenses,Sales,Earnings,EBIT,EBITDA,EPS,acquire,merge,income,revenue,revenues,expense,expenses,sales,earnings,EBIT,EBITDA,EPS,Acquire,Merge,capital,Capital,positive,gain,loss,Positive,Gain,Loss

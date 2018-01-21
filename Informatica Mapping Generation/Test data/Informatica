@@ -1,0 +1,5 @@
+aggregate all positive number present in review & store it in review_stg.
+
+Concat all primary keys of review & store it in concat_key in review_stg
+
+Use mapplet xyz to 

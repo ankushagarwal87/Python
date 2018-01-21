@@ -1,0 +1,18 @@
+pip3 install MySQL-python
+pip3 install mysql-connector-python-rf
+
+sudo apt-get install python-dev
+apt-get install libmysqlclient-dev
+
+sudo service oracle-xe start
+sqlplus sys as sysdba
+sqlplus
+SET WRAP OFF
+
+idle-python3.5
+
+pip3 install flask
+
+pip3 install cx_Oracle
+
+

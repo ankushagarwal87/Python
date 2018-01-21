@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Analytics On Transcripts Of Cherokee</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+</head>
+<style>
+html,body {
+  padding:0;
+  margin:0;
+  height:100%;
+  min-height:100%;
+ }
+
+.quarter{
+  width:47%;
+  height:100%;
+  float:left;
+  margin-left : 15px;
+  
+}
+.contents{
+  height:50%;
+  width:100%;
+}
+iframe {position:relative;top:0;left:0;width:100%;}
+
+
+
+#chart_wrap{
+
+margin-left : 17%;}
+
+#compound{
+position : absolute;
+margin-top : 5%;
+}
+.attendies{
+position : absolute;
+margin-top : 27%;
+margin-left : -80%;
+}
+</style>
+
+<body>
+	<div class="container">
+		<h2>Earning Impact Analyzer</h2>
+		<p>EI Report is your quickest insight into earnings calls as they happen during the earnings season.</p>
+
+		<ul class="nav nav-tabs">
+			<li class="active"><a data-toggle="tab" href="#home">Statistics</a></li>
+		
+		
+			<li><a data-toggle="tab" href="#Q1">Quarter 1</a></li>
+		
+				
+		</ul>
+		
+		<div class="tab-content">
+			<div id="home" class="tab-pane fade in active">
+				<h3>Cherokee</h3>
+				<p></p>
+					<div class="contents">
+						
+						
+						<div class="col-md-6 quarter well">
+							<center class = "titleOfChart"><H3><B> Quarter 1 for  </B></H3></center>
+							<div class="container-fluid" id = "compound">
+								<div class="row">
+									<div class="col-md-12">The Overall Sentiment is 0.24 percent </div>
+									<a href="#" data-toggle="modal" data-target="#attendies1" class="btn btn-info " role="button" style="margin-left: 5%;margin-top:10%; z-index: 200;">Attendies</a>
+								</div>
+							</div>
+							
+							 
+							<center>
+								<div id="chart_wrap">
+									<div id="piechart1"></div>
+								</div>
+							</center>
+								<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+								<script type="text/javascript">
+								// Load google charts
+								
+								google.charts.load('current', {'packages':['corechart']});
+								google.charts.setOnLoadCallback(drawChart);
+
+								// Draw the chart and set the chart values
+								function drawChart() {
+								  var data = google.visualization.arrayToDataTable([
+								  ['Sentiiment', 'Probability'],
+								  ['Positive', 0.1282059925093632],
+								  ['Negative', 0.01650187265917603],
+								  ['Neutral', 0.8552958801498126]
+								]);
+
+								  // Optional; add a title and set the width and height of the chart
+								  var options = {  width: $(window).width()*0.42,height: $(window).height()*0.30,backgroundColor: 'transparent', legend: {position: 'none'}};
+
+								  // Display the chart inside the element with id="piechart"
+								  var chart = new google.visualization.PieChart(document.getElementById('piechart1'));
+								  chart.draw(data, options);
+								  google.visualization.events.addListener(chart, 'select', 
+								  
+								  function() {
+								  // grab a few details before redirecting
+								  var selection = chart.getSelection()[0];
+								  if (typeof selection != "undefined")
+								  {
+								  var topping = data.getValue(selection.row, 0);
+								  console.log(selection);
+								  console.log(topping);
+								  if(topping == 'Positive')
+										$('#positive1').modal('show');
+								  if(topping == 'Negative')
+										$('#negative1').modal('show');
+								  if(topping == 'Neutral')
+										$('#neutral1').modal('show');
+								  
+								  }
+								  });
+								}
+								</script>
+							</div>
+					
+					
+					</div>
+				</div>
+			
+					
+								
+				<div id="Q1" class="tab-pane fade">
+					<div class="row" >
+						<div class="col-xs-12 col-sm-8 col-md-12">
+							<iframe class="frames" marginwidth="1" marginheight="1" hspace="0" vspace="0" src = "file:////home/ankush/Github/Code Jam Python/datavaders/data/Cherokee/Q1/CherokeeQ1.html" frameBorder = "0"></iframe>
+						</div>
+					</div>
+				</div>
+				
+				
+		</div>
+	</div>	
+
+
+
+<!-- Modal -->
+<div id="positive1" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Positive Sentences Of Quarter 1</h4>
+      </div>
+      <div class="modal-body">
+		 
+        <p>The combination of our capabilities platform and our lifestyle brand portfolio will propel our future growth, ensuring that our brands stands out and reach out to consumers in important new ways.</p>
+		
+        <p>The growing diversity of our capabilities platform drives similar synergies, leveraging our traditional strength in direct-to-retail, we're balancing it with expanded wholesale licensees and distributed partnerships and franchise retail, supported by our direct-to-consumer outreach.</p>
+		
+        <p>We're particularly excited to be expanding our Tony Hawk presence in this important region.</p>
+		
+        <p>A robust integrated monthly marketing campaign and promotional events calendar is driving growth and success for our franchisees.</p>
+		
+        <p>Product exclusives, such as Richmond's Marvel Time Spider-Man is an example of our efforts that are expected to drive sales and increase consumer engagement.</p>
+		
+        <p>We have a clear vision for our future and where we are taking our brands.</p>
+		
+        <p>On behalf of our Board and the entire management team, we couldn't be more pleased to have Bob assume greater responsibility where our team can benefit from his experience and strong industry knowledge.</p>
+		
+        <p>Jess has been and remains one of the strongest supporters of Cherokee Global Brands for which we offer our sincere gratitude for his availability, his guidance, and tireless support during these most interesting times.</p>
+		
+        <p>Thank you for joining us today and for the continued interest in a more balanced, diversified enterprise.</p>
+		
+        <p>And so that's hopefully helpful to answer your question.</p>
+		
+        <p>We are cautiously optimistic.</p>
+		
+        <p>Henry Stupp
+I'd like to thank everyone for the continued support of Cherokee.</p>
+		
+        <p>Clearly, we are working on a new future and with the great portfolio of brands it's a combination of our pillars or platform in our portfolio that will allow the company to grow.</p>
+		
+        <p>And I believe that as we head into the future, the future will yield positive results.</p>
+		
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal Closing-->	
+<!-- Modal -->
+<div id="negative1" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Negative Sentences Of Quarter 1</h4>
+      </div>
+      <div class="modal-body">
+		 
+        <p>The risks included here are not exhaustive.</p>
+		
+        <p>Net debt for the quarter was $43.3 million.</p>
+		
+        <p>Of course the situation exposes us to risks, including Cerberus' right to terminate its obligations under the Cerberus credit facility and accelerate debt.</p>
+		
+        <p>What are you guys going to do now that they've gone bankrupt?</p>
+		      
+	  </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal Closing-->
+<!-- Modal -->
+<div id="attendies1" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Attendies of Quarter 1</h4>
+      </div>
+      <div class="modal-body">
+	    <h4>Executives :</h4>
+		<ol>
+		 
+        <li>Laura Bainbridge - IR, ADDO Communications</li>
+		
+        <li>Henry Stupp - CEO</li>
+		
+        <li>Jason Boling - CFO</li>
+		     
+		</ol>
+		<h4>Analysts :</h4>
+		<ol>
+		 
+        <li>Eric Beder - FBR</li>
+		
+        <li>Dave King - ROTH Capital Partners</li>
+		     
+		</ol>
+	  </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal Closing-->		
+
+
+
+	
+</body>
+<script>
+var _docHeight = (document.height !== undefined) ? document.height : document.body.offsetHeight;
+frameHeight = _docHeight - (_docHeight*25)/100
+
+var elements = document.getElementsByClassName("frames");
+for (var i=0;i<elements.length ; i++){
+	$(elements[i]).attr( 'height', frameHeight);
+	}
+</script>
+
+</html>
