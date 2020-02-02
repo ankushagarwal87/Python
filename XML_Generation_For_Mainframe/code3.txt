@@ -1,0 +1,17 @@
+    MOVE "year" TO WW-YEAR-VALUE.
+    MOVE "make" TO WW-MAKE-VALUE.
+    MOVE "model" TO WW-MODEL-VALUE.
+    MOVE "color" TO WW-COLOR-VALUE.
+    MOVE "description" TO WW-DESCRIPTION-VALUE.
+    MOVE "price" TO WW-PRICE-VALUE.
+    MOVE "seller" TO WW-SELLER-VALUE.
+    MOVE "city" TO WW-CITY-VALUE.
+    MOVE "state" TO WW-STATE-VALUE.
+    MOVE "year" TO WW-YEAR-VALUE.
+    MOVE "make" TO WW-MAKE-VALUE.
+    MOVE "model" TO WW-MODEL-VALUE.
+    MOVE "color" TO WW-COLOR-VALUE.
+    MOVE "description" TO WW-DESCRIPTION-VALUE.
+    MOVE "seller" TO WW-SELLER-VALUE.
+    MOVE "city" TO WW-CITY-VALUE.
+    MOVE "state" TO WW-STATE-VALUE.

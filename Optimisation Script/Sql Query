@@ -1,0 +1,14 @@
+SELECT a.acct_num,
+       a.grp_num,
+       a.div_num,
+       a.sub_pers_num,
+       a.pat_pers_num,
+       a.pat_dob,
+       b.rel_code,
+       b.pat_pmt,
+       b.deductible_amt,
+       b.net_pmt 
+FROM   source.master_claim a join
+       source.master_line b on a.clm_num = b.clm_num  AND a.clm_seq = b.clm_seq AND a.clm_stat IN ( 'P', 'H', 'A' )
+       join param.proc_hier c on  b.billed_ada_proc = c.proc_key AND c.max_app = 'BASIC'; 
+       join param.con_product d    on b.prod_id = d.prod_id

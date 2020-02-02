@@ -1,0 +1,332 @@
+Python 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609] on linux
+Type "copyright", "credits" or "license()" for more information.
+>>> 
+====== RESTART: /home/ankush/Github/Python/Glassdoor Anaysis/extract.py ======
+Enter state search link :https://www.glassdoor.co.in/Reviews/des-moines-reviews-SRCH_IL.0,10_IM235.htm
+******************************************************************************************************************
+Company Page Link --  https://www.glassdoor.com//Overview/Working-at-Wells-Fargo-EI_IE8876.11,22.htm
+Website www.wellsfargo.com
+Headquarters San Francisco, CA (US)
+Size 10000+ employees
+Founded  1852
+Type  Company - Public (WFC) 
+Industry  Unknown
+Revenue  $10+ billion (USD) per year
+Competitors  Unknown
+Benefit Page Link --  https://www.glassdoor.com//Benefits/Wells-Fargo-India-Benefits-EI_IE8876.0,11_IL.12,17_IN115.htm
+Life Insurance (38) 38 of 40 (95) employees reporting
+Employee who has reported having Insurance:   38 employees reported this benefit
+Employee who has given rating:  5
+Star rating:  4.0
+Disability Insurance 17 of 30 (56.67) employees reporting
+Dental Insurance 7 of 31 (22.58) employees reporting
+22.58 We can sell our Dental Insurance product as overall enrollment seem to be very low
+Vision Insurance 8 of 31 (25.81) employees reporting
+******************************************************************************************************************
+******************************************************************************************************************
+Company Page Link --  https://www.glassdoor.com//Overview/Working-at-Principal-Financial-Group-EI_IE2941.11,36.htm
+Website www.principal.com
+Headquarters Des Moines, IA (US)
+Size 10000+ employees
+Founded  1879
+Type  Company - Public (PFG) 
+Industry  Investment Banking & Asset Management
+Revenue  $10+ billion (USD) per year
+Competitors  Unknown
+Benefit Page Link --  https://www.glassdoor.com//Benefits/Principal-Financial-Group-India-Benefits-EI_IE2941.0,25_IL.26,31_IN115.htm
+Life Insurance (9) 9 of 11 (81.82) employees reporting
+Employee who has reported having Insurance:   9 employees reported this benefit
+Employee who has given rating:  1
+Star rating:  5.0
+Disability Insurance (7) 7 of 9 (77.78) employees reporting
+Employee who has reported having Insurance:   7 employees reported this benefit
+Employee who has given rating:  2
+Star rating:  4.5
+Dental Insurance 1 of 8 (12.5) employees reporting
+12.5 We can sell our Dental Insurance product as overall enrollment seem to be very low
+Vision Insurance 2 of 8 (25) employees reporting
+25.0 We can sell our Vision Insurance product as overall enrollment seem to be very low
+******************************************************************************************************************
+******************************************************************************************************************
+Company Page Link --  https://www.glassdoor.com//Overview/Working-at-Nationwide-EI_IE2913.11,21.htm
+Website www.nationwide.com
+Headquarters Columbus, OH (US)
+Size 10000+ employees
+Founded  1925
+Type  Company - Private
+Industry  Insurance Carriers
+Revenue  $10+ billion (USD) per year
+Competitors  Allstate, Prudential, State Farm
+Benefit Page Link --  https://www.glassdoor.com//Benefits/Nationwide-India-Benefits-EI_IE2913.0,10_IL.11,16_IN115.htm
+******************************************************************************************************************
+******************************************************************************************************************
+Company Page Link --  https://www.glassdoor.com//Overview/Working-at-DuPont-Pioneer-EI_IE1786.11,25.htm
+Website www.pioneer.com
+Headquarters Johnston, IA (US)
+Size 10000+ employees
+Founded  1999
+Type  Subsidiary or Business Segment
+Industry  Biotech & Pharmaceuticals
+Revenue  $1 to $5 million (USD) per year
+Competitors  Unknown
+Benefit Page Link --  https://www.glassdoor.com//Benefits/DuPont-Pioneer-India-Benefits-EI_IE1786.0,14_IL.15,20_IN115.htm
+Life Insurance (1) 1 of 2 (50) employees reporting
+Employee who has reported having Insurance:   1 employees reported this benefit
+Employee who has given rating:  1
+Star rating:  3.0
+Disability Insurance 0 of 1 (0) employees reporting
+0.0 We can sell our Disability Insurance product as overall enrollment seem to be very low
+Dental Insurance 1 of 2 (50) employees reporting
+Vision Insurance 0 of 1 (0) employees reporting
+0.0 We can sell our Vision Insurance product as overall enrollment seem to be very low
+******************************************************************************************************************
+******************************************************************************************************************
+Company Page Link --  https://www.glassdoor.com//Overview/Working-at-Hy-Vee-EI_IE2838.11,17.htm
+Website www.hy-vee.com
+Headquarters West Des Moines, IA (US)
+Size 10000+ employees
+Founded  1930
+Type  Company - Private
+Industry  Grocery Stores & Supermarkets
+Revenue  $5 to $10 billion (USD) per year
+Competitors  Unknown
+Benefit Page Link --  https://www.glassdoor.com//Benefits/Hy-Vee-India-Benefits-EI_IE2838.0,6_IL.7,12_IN115.htm
+******************************************************************************************************************
+******************************************************************************************************************
+Company Page Link --  https://www.glassdoor.com//Overview/Working-at-Businessolver-EI_IE340665.11,24.htm
+Website www.businessolver.com
+Headquarters West Des Moines, IA (US)
+Size 501 to 1000 employees
+Founded  1998
+Type  Company - Private
+Industry  IT Services
+Revenue  Unknown / Non-Applicable
+Competitors  Unknown
+Benefit Page Link --  https://www.glassdoor.com//Benefits/Businessolver-India-Benefits-EI_IE340665.0,13_IL.14,19_IN115.htm
+******************************************************************************************************************
+******************************************************************************************************************
+Company Page Link --  https://www.glassdoor.com//Overview/Working-at-Meredith-Corporation-EI_IE439.11,31.htm
+Website www.meredith.com
+Headquarters Des Moines, IA (US)
+Size 1001 to 5000 employees
+Founded  1902
+Type  Company - Public (MDP) 
+Industry  Publishing
+Revenue  $1 to $2 billion (USD) per year
+Competitors  Hearst, Media General
+Benefit Page Link --  https://www.glassdoor.com//Benefits/Meredith-Corporation-India-Benefits-EI_IE439.0,20_IL.21,26_IN115.htm
+******************************************************************************************************************
+******************************************************************************************************************
+Company Page Link --  https://www.glassdoor.com//Overview/Working-at-John-Deere-EI_IE195.11,21.htm
+Website www.deere.com
+Headquarters Moline, IL (US)
+Size 10000+ employees
+Founded  1837
+Type  Company - Public (DE) 
+Industry  Industrial Manufacturing
+Revenue  $10+ billion (USD) per year
+Competitors  Unknown
+Benefit Page Link --  https://www.glassdoor.com//Benefits/John-Deere-India-Benefits-EI_IE195.0,10_IL.11,16_IN115.htm
+Life Insurance (18) 18 of 21 (85.71) employees reporting
+Employee who has reported having Insurance:   18 employees reported this benefit
+Employee who has given rating:  7
+Star rating:  4.1
+Disability Insurance (10) 10 of 17 (58.82) employees reporting
+Employee who has reported having Insurance:   10 employees reported this benefit
+Employee who has given rating:  1
+Star rating:  5.0
+Dental Insurance 2 of 18 (11.11) employees reporting
+11.11 We can sell our Dental Insurance product as overall enrollment seem to be very low
+Vision Insurance 1 of 17 (5.88) employees reporting
+5.88 We can sell our Vision Insurance product as overall enrollment seem to be very low
+******************************************************************************************************************
+******************************************************************************************************************
+Company Page Link --  https://www.glassdoor.com//Overview/Working-at-UnityPoint-Health-EI_IE18460.11,28.htm
+Website www.unitypoint.org
+Headquarters West Des Moines, IA (US)
+Size 10000+ employees
+Founded  1994
+Type  Non-profit Organisation
+Industry  Health Care Services & Hospitals
+Revenue  $2 to $5 billion (USD) per year
+Competitors  Catholic Health Initiatives, Mayo Clinic, University of Iowa Health Care
+Benefit Page Link --  https://www.glassdoor.com//Benefits/UnityPoint-Health-India-Benefits-EI_IE18460.0,17_IL.18,23_IN115.htm
+******************************************************************************************************************
+******************************************************************************************************************
+Company Page Link --  https://www.glassdoor.com//Overview/Working-at-Wellmark-EI_IE33554.11,19.htm
+Website www.wellmark.com
+Headquarters Des Moines, IA (US)
+Size 1001 to 5000 employees
+Founded  1939
+Type  Non-profit Organisation
+Industry  Insurance Carriers
+Revenue  $2 to $5 billion (USD) per year
+Competitors  Unknown
+Benefit Page Link --  https://www.glassdoor.com//Benefits/Wellmark-India-Benefits-EI_IE33554.0,8_IL.9,14_IN115.htm
+******************************************************************************************************************
+>>> 
+====== RESTART: /home/ankush/Github/Python/Glassdoor Anaysis/extract.py ======
+Enter state search link :https://www.glassdoor.com/Reviews/des-moines-reviews-SRCH_IL.0,10_IM235.htm
+******************************************************************************************************************
+Company Page Link --  https://www.glassdoor.com//Overview/Working-at-Wells-Fargo-EI_IE8876.11,22.htm
+Website www.wellsfargo.com
+Headquarters San Francisco, CA (US)
+Size 10000+ employees
+Founded  1852
+Type  Company - Public (WFC) 
+Industry  Unknown
+Revenue  $10+ billion (USD) per year
+Competitors  Unknown
+Benefit Page Link --  https://www.glassdoor.com//Benefits/Wells-Fargo-India-Benefits-EI_IE8876.0,11_IL.12,17_IN115.htm
+Life Insurance (38) 38 of 40 (95) employees reporting
+Employee who has reported having Insurance:   38 employees reported this benefit
+Employee who has given rating:  5
+Star rating:  4.0
+Disability Insurance 17 of 30 (56.67) employees reporting
+Dental Insurance 7 of 31 (22.58) employees reporting
+22.58 We can sell our Dental Insurance product as overall enrollment seem to be very low
+Vision Insurance 8 of 31 (25.81) employees reporting
+******************************************************************************************************************
+******************************************************************************************************************
+Company Page Link --  https://www.glassdoor.com//Overview/Working-at-Principal-Financial-Group-EI_IE2941.11,36.htm
+Website www.principal.com
+Headquarters Des Moines, IA (US)
+Size 10000+ employees
+Founded  1879
+Type  Company - Public (PFG) 
+Industry  Investment Banking & Asset Management
+Revenue  $10+ billion (USD) per year
+Competitors  Unknown
+Benefit Page Link --  https://www.glassdoor.com//Benefits/Principal-Financial-Group-India-Benefits-EI_IE2941.0,25_IL.26,31_IN115.htm
+Life Insurance (9) 9 of 11 (81.82) employees reporting
+Employee who has reported having Insurance:   9 employees reported this benefit
+Employee who has given rating:  1
+Star rating:  5.0
+Disability Insurance (7) 7 of 9 (77.78) employees reporting
+Employee who has reported having Insurance:   7 employees reported this benefit
+Employee who has given rating:  2
+Star rating:  4.5
+Dental Insurance 1 of 8 (12.5) employees reporting
+12.5 We can sell our Dental Insurance product as overall enrollment seem to be very low
+Vision Insurance 2 of 8 (25) employees reporting
+25.0 We can sell our Vision Insurance product as overall enrollment seem to be very low
+******************************************************************************************************************
+******************************************************************************************************************
+Company Page Link --  https://www.glassdoor.com//Overview/Working-at-Nationwide-EI_IE2913.11,21.htm
+Website www.nationwide.com
+Headquarters Columbus, OH (US)
+Size 10000+ employees
+Founded  1925
+Type  Company - Private
+Industry  Insurance Carriers
+Revenue  $10+ billion (USD) per year
+Competitors  Allstate, Prudential, State Farm
+Benefit Page Link --  https://www.glassdoor.com//Benefits/Nationwide-India-Benefits-EI_IE2913.0,10_IL.11,16_IN115.htm
+******************************************************************************************************************
+******************************************************************************************************************
+Company Page Link --  https://www.glassdoor.com//Overview/Working-at-DuPont-Pioneer-EI_IE1786.11,25.htm
+Website www.pioneer.com
+Headquarters Johnston, IA (US)
+Size 10000+ employees
+Founded  1999
+Type  Subsidiary or Business Segment
+Industry  Biotech & Pharmaceuticals
+Revenue  $1 to $5 million (USD) per year
+Competitors  Unknown
+Benefit Page Link --  https://www.glassdoor.com//Benefits/DuPont-Pioneer-India-Benefits-EI_IE1786.0,14_IL.15,20_IN115.htm
+Life Insurance (1) 1 of 2 (50) employees reporting
+Employee who has reported having Insurance:   1 employees reported this benefit
+Employee who has given rating:  1
+Star rating:  3.0
+Disability Insurance 0 of 1 (0) employees reporting
+0.0 We can sell our Disability Insurance product as overall enrollment seem to be very low
+Dental Insurance 1 of 2 (50) employees reporting
+Vision Insurance 0 of 1 (0) employees reporting
+0.0 We can sell our Vision Insurance product as overall enrollment seem to be very low
+******************************************************************************************************************
+******************************************************************************************************************
+Company Page Link --  https://www.glassdoor.com//Overview/Working-at-Hy-Vee-EI_IE2838.11,17.htm
+Website www.hy-vee.com
+Headquarters West Des Moines, IA (US)
+Size 10000+ employees
+Founded  1930
+Type  Company - Private
+Industry  Grocery Stores & Supermarkets
+Revenue  $5 to $10 billion (USD) per year
+Competitors  Unknown
+Benefit Page Link --  https://www.glassdoor.com//Benefits/Hy-Vee-India-Benefits-EI_IE2838.0,6_IL.7,12_IN115.htm
+******************************************************************************************************************
+******************************************************************************************************************
+Company Page Link --  https://www.glassdoor.com//Overview/Working-at-Businessolver-EI_IE340665.11,24.htm
+Website www.businessolver.com
+Headquarters West Des Moines, IA (US)
+Size 501 to 1000 employees
+Founded  1998
+Type  Company - Private
+Industry  IT Services
+Revenue  Unknown / Non-Applicable
+Competitors  Unknown
+Benefit Page Link --  https://www.glassdoor.com//Benefits/Businessolver-India-Benefits-EI_IE340665.0,13_IL.14,19_IN115.htm
+******************************************************************************************************************
+******************************************************************************************************************
+Company Page Link --  https://www.glassdoor.com//Overview/Working-at-Meredith-Corporation-EI_IE439.11,31.htm
+Website www.meredith.com
+Headquarters Des Moines, IA (US)
+Size 1001 to 5000 employees
+Founded  1902
+Type  Company - Public (MDP) 
+Industry  Publishing
+Revenue  $1 to $2 billion (USD) per year
+Competitors  Hearst, Media General
+Benefit Page Link --  https://www.glassdoor.com//Benefits/Meredith-Corporation-India-Benefits-EI_IE439.0,20_IL.21,26_IN115.htm
+******************************************************************************************************************
+******************************************************************************************************************
+Company Page Link --  https://www.glassdoor.com//Overview/Working-at-John-Deere-EI_IE195.11,21.htm
+Website www.deere.com
+Headquarters Moline, IL (US)
+Size 10000+ employees
+Founded  1837
+Type  Company - Public (DE) 
+Industry  Industrial Manufacturing
+Revenue  $10+ billion (USD) per year
+Competitors  Unknown
+Benefit Page Link --  https://www.glassdoor.com//Benefits/John-Deere-India-Benefits-EI_IE195.0,10_IL.11,16_IN115.htm
+Life Insurance (18) 18 of 21 (85.71) employees reporting
+Employee who has reported having Insurance:   18 employees reported this benefit
+Employee who has given rating:  7
+Star rating:  4.1
+Disability Insurance (10) 10 of 17 (58.82) employees reporting
+Employee who has reported having Insurance:   10 employees reported this benefit
+Employee who has given rating:  1
+Star rating:  5.0
+Dental Insurance 2 of 18 (11.11) employees reporting
+11.11 We can sell our Dental Insurance product as overall enrollment seem to be very low
+Vision Insurance 1 of 17 (5.88) employees reporting
+5.88 We can sell our Vision Insurance product as overall enrollment seem to be very low
+******************************************************************************************************************
+******************************************************************************************************************
+Company Page Link --  https://www.glassdoor.com//Overview/Working-at-UnityPoint-Health-EI_IE18460.11,28.htm
+Website www.unitypoint.org
+Headquarters West Des Moines, IA (US)
+Size 10000+ employees
+Founded  1994
+Type  Non-profit Organisation
+Industry  Health Care Services & Hospitals
+Revenue  $2 to $5 billion (USD) per year
+Competitors  Catholic Health Initiatives, Mayo Clinic, University of Iowa Health Care
+Benefit Page Link --  https://www.glassdoor.com//Benefits/UnityPoint-Health-India-Benefits-EI_IE18460.0,17_IL.18,23_IN115.htm
+******************************************************************************************************************
+******************************************************************************************************************
+Company Page Link --  https://www.glassdoor.com//Overview/Working-at-Wellmark-EI_IE33554.11,19.htm
+Website www.wellmark.com
+Headquarters Des Moines, IA (US)
+Size 1001 to 5000 employees
+Founded  1939
+Type  Non-profit Organisation
+Industry  Insurance Carriers
+Revenue  $2 to $5 billion (USD) per year
+Competitors  Unknown
+Benefit Page Link --  https://www.glassdoor.com//Benefits/Wellmark-India-Benefits-EI_IE33554.0,8_IL.9,14_IN115.htm
+******************************************************************************************************************
+>>> 

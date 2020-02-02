@@ -1,0 +1,35 @@
+import cv2
+im = cv2.imread("form11.png");
+r=cv2.selectROI(im)
+imCrop = im[int(r[1]):int(r[1]+r[3]), int(r[0]):int(r[0]+r[2])]
+cv2.imshow("Image",imCrop)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+cv2.imwrite('test3.png',imCrop)
+
+from PIL import Image, ImageEnhance, ImageFilter
+from tesseract import image_to_string
+
+im = Image.open('test3.png')
+    ...: im = im.convert("RGBA")
+    ...: newimdata = []
+    ...: datas = im.getdata()
+    ...: 
+    ...: for item in datas:
+    ...:     if item[0] < 112 or item[1] < 112 or item[2] < 112:
+    ...:         newimdata.append(item)
+    ...:     else:
+    ...:         newimdata.append((255, 255, 255))
+    ...: im.putdata(newimdata)
+    ...: 
+    ...: im = im.filter(ImageFilter.MedianFilter())
+    ...: enhancer = ImageEnhance.Contrast(im)
+    ...: im = enhancer.enhance(2)
+    ...: im = im.convert('1')
+    ...: im.save('temp2.jpg')
+    ...: text = pytesseract.image_to_string(Image.open('temp2.jpg'),config='-c t
+    ...: essedit_char_whitelist=0123456789abcdefghijklmnopqrstuvwxyz -psm 6', la
+    ...: ng='eng')
+    ...: print(text)
+
+text = pytesseract.image_to_string(Image.open('temp2.jpg'))

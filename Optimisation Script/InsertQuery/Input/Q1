@@ -1,0 +1,12 @@
+SELECT a.acct_num,
+       a.grp_num,
+       a.div_num,
+       a.sub_pers_num,
+       a.pat_pers_num,
+       a.pat_dob,
+       b.rel_code,
+       b.pat_pmt,
+       b.deductible_amt,
+       b.net_pmt 
+FROM   REVIEW_WRHS a,REVIEW_WRHS b
+where a=1

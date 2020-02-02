@@ -1,0 +1,36 @@
+description=response.xpath(".//div[@class='infoEntity']/descendant::text()").extract()
+
+['Website', 'www.principal.com', 'Headquarters', 'Des Moines, IA (US)', 'Size', '10000+ employees', 'Founded', ' 1879', 'Type', ' Company - Public (PFG) ', 'Industry', ' Investment Banking & Asset Management', 'Revenue', ' $10+ billion (USD) per year', 'Competitors', ' Unknown']
+
+
+In [27]: for i in description:
+    ...:     print(i)
+    ...:     
+Website
+www.principal.com
+Headquarters
+Des Moines, IA (US)
+Size
+10000+ employees
+Founded
+ 1879
+Type
+ Company - Public (PFG) 
+Industry
+ Investment Banking & Asset Management
+Revenue
+ $10+ billion (USD) per year
+Competitors
+ Unknown
+
+In [57]: description=response.css(".eiCell.cell.benefits::attr(href)").extract()
+    ...: 
+
+In [58]: print(description)
+['/Benefits/Principal-Financial-Group-India-Benefits-EI_IE2941.0,25_IL.26,31_IN115.htm']
+
+
+
+
+
+
