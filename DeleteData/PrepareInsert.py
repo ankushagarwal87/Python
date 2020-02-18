@@ -61,10 +61,10 @@ def prepareInsertList(table,column,value):
                 print(str(referenceTable)+" "+str(referenceColumn)+" "+str(value)+' already added')
 
 def prepareInsertFile():
-    for table in reversed(tableOrder):
-        for statement in insertList:
-            if(table+" " in statement):
-                output.write(statement+"\n")
+    #for table in reversed(tableOrder):
+    for statement in reversed(insertList):
+            #if(table+" " in statement):
+        output.write(statement+"\n")
 
 table = input('Enter Table name : ')
 column = input('Enter Column name : ')

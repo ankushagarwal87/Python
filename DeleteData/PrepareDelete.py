@@ -82,10 +82,10 @@ def prepareDeleteList(table,column,value):
     '''
 
 def PrepareDeleteFile():
-    for table in reversed(tableOrder):
-        for statement in deleteList:
-            if(table+" " in statement):
-                output.write(statement+"\n")
+    #for table in reversed(tableOrder):
+    for statement in reversed(deleteList):
+            #if(table+" " in statement):
+        output.write(statement+"\n")
     
 
 
@@ -94,7 +94,7 @@ column = input('Enter Column name : ')
 value = input('Enter Column Value : ')
 
 #table='Employees'
-output=open("DeleteFor_"+table,'w')
+output=open("DeleteForrr_"+table,'w')
 connstr='scott/tiger'
 try:
     conn = cx_Oracle.connect(connstr)
