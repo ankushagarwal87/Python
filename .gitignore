@@ -6,9 +6,7 @@ OCR/Handwrittern-Recognition/final_data/
 OCR/Handwrittern-Recognition/log/
 OCR/Handwrittern-Recognition/models
 OCR/Pdf-Automation/output/
-Prospective-Client/f_5500_sf_2017_latest.csv
-Prospective-Client/f_5500_2017_latest.csv
-Prospective-Client/F_SCH_A_2017_latest.csv
+Prospective-Client/*.csv
 OCR/
-Prospective-Client/
+
 

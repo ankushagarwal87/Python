@@ -1,0 +1,94 @@
+
+    Which companies in your area are purchasing group benefits plans for their employees
+    What types of plans are they purchasing (medical, dental, life, etc.)
+    What insurance carriers/providers are they currently using
+    Who are the primary contacts within the company (CEO, HR, plan admin) and what are their phone and email addresses
+    When are the renewal dates for each plan
+    Who are you competing against (current BOR)
+    How many employees are participating in each plan
+    And how much commission can you expect to make when you win the business
+
+
+There are 2 types of Form 5500 filings -- welfare benefits (company with 120+ employees) and retirement filings (any size company). One of the best ways to identify and target smaller company leads, under 100 employees, is to be able to search for companies that have filed the 'Retirement' Form 5500. It tends to reason, if a company is offering their employees a retirement plan, like a 401(k), the chances are very good that they are also offering group benefits like health, life or dental to those same folks.
+
+
+
+Insurance brokers, agents, and consultants gain more information to better conduct prospecting. For example, having a company’s complete welfare employee benefit plan gives them an edge to identify renewal dates, plan types, insurance carriers, and existing broker relationships.
+
+Insurance carriers use this data to find new sales opportunities by identifying broker relationships and helping grow their books of business.
+
+can find all those businesses that truly need, want and already buy the products and services you are selling.
+
+
+
+
+
+Check for some of compaies we have in compass & their details
+
+
+
+
+The Form 5500 Annual Report is the primary source of information about the operations, funding and investments of approximately 800,000 retirement and welfare benefit plans. The datasets below are the raw, unedited data from all of the Form 5500 and Form 5500-SF filings for each year, including the data reported in the various schedules.
+
+
+    Data Cleansing
+    Data Hygiene
+    Data Standardization and
+    Data Augmentation
+
+
+Now it is time to enrich and enhance the company information. We leverage machine learning and primary sources of information (like the company's website) to extract additional company details. We enhance the data by adding a company description, type of industry, specialties, website address information and more. When a company is publicly traded, we add stock information and company news.
+
+
+The Form 5500, Annual Return/Report of Employee Benefit 
+Plan, including all required schedules and attachments (Form 
+5500 return/report), is used to report information concerning 
+employee benefit plans
+
+If you are a small plan (generally under 100 participants at 
+the beginning of the plan year), 
+you may be eligible to file the 
+Form 5500-SF instead of the Form 5500. For more information, 
+see the instructions to the Form 5500-SF. 
+
+Welfare benefit 
+plans provide benefits such as 
+medical, dental, life insurance, 
+apprenticeship and training, scholar
+ship funds, severance pay, 
+disability, etc. See 
+What To File
+ for more 
+information. 
+
+
+
+CODE 
+Welfare Benefit Features 
+4A  
+Health (other than vision or dental).  
+4B  
+Life insurance.  
+4C  
+Supplemental unemployment.  
+4D  
+Dental.  
+4E  
+Vision.  
+4F  
+Temporary disability (accident and sickness).  
+4G  
+Prepaid legal.  
+4H  
+Long-term disability.  
+4I  
+Severance pay.  
+4J  
+Apprenticeship and training.  
+4L  
+Death benefits (include travel accident but not life 
+insurance)
+
+
+
+Can feed data in quting system & can send premium in email
